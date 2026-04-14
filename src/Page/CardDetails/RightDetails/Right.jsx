@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FiPhoneCall } from "react-icons/fi";
 {/* <FiPhoneCall /> */}
 import { RiMessage2Line } from "react-icons/ri";
 
 import { GoDeviceCameraVideo } from "react-icons/go";
+import CommunicationContext from '../../../Context/ContextHook';
 
 
 const Right = ({ newFriend }) => {
+
+  const {text , setText , call ,setCall , video , setVideo} = useContext(CommunicationContext);
+  console.log(text , setText , call ,setCall , video , setVideo)
+
   return (
     <div className='space-y-4'>
       <div className='grid lg:grid-cols-3 grid-cols-1 gap-6 rounded-md w-auto lg:w-12/12 mx-auto '>
