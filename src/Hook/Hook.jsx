@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect,useState } from 'react';
 
 const useHook = () => {
+  const [friends, setFriends] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const {}
-  return (
-    
-  );
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch("/data.json");
+      const data = await res.json();
+        setFriends(data);
+        setLoading(false)
+    };
+    fetchData();
+  }, []);
+
+  return { friends, loading };
 };
 
 export default useHook;
