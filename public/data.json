@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "picture": "https://i.ibb.co.com/4BSy7rH/joseph-gonzalez-i-Fg-Rcq-Hznqg-unsplash.jpg",
+    "email": "john@example.com",
+    "days_since_contact": 12,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "Samuel Jenkins",
+    "picture": "https://i.ibb.co.com/spvkxJWk/albert-dera-ILip77-Sbm-OE-unsplash.jpg",
+    "email": "sarah.j@techcorp.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["work", "mentor"],
+    "bio": "Former manager at TechCorp. Great for career advice.",
+    "goal": 30,
+    "next_due_date": "2025-08-15"
+  },
+  {
+    "id": 3,
+    "name": "Michael Chen",
+    "picture": "https://i.ibb.co.com/tptGLwDG/brayan-granados-mw-WIzc-Yj-Hj0-unsplash.jpg",
+    "email": "mchen_dev@outlook.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["college", "hackathon"],
+    "bio": "Met during the 2023 Winter Hackathon. React enthusiast.",
+    "goal": 14,
+    "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 4,
+    "name": "Elias Rodriguez",
+    "picture": "https://i.ibb.co.com/ksCfLF6t/nate-neelson-Zx-Mt-Til-Cq-w-unsplash.jpg",
+    "email": "elena.rod@designmail.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["networking", "design"],
+    "bio": "UI/UX Designer met at a local meetup. Last spoke about Figma tips.",
+    "goal": 30,
+    "next_due_date": "2025-06-10"
+  },
+  {
+    "id": 5,
+    "name": "David Smith",
+    "picture": "https://i.ibb.co.com/nNKXddYc/sam-ruder-SMJ4-LWpc-I6c-unsplash.jpg",
+    "email": "d.smith@freemail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["close friend", "gym"],
+    "bio": "High school friend. Training for a marathon together.",
+    "goal": 7,
+    "next_due_date": "2025-07-25"
+  },
+  {
+    "id": 6,
+    "name": "Amir Khan",
+    "picture": "https://i.ibb.co.com/PsmdfXSc/md-mahdi-oqvq6-Qj5-Zkk-unsplash.jpg",
+    "email": "akhan@uni.edu",
+    "tags": ["college", "study group"],
+    "days_since_contact": 19,
+    "status": "almost due",
+    "bio": "Lab partner from Physics II. Very organized and helpful.",
+    "goal": 21,
+    "next_due_date": "2025-07-21"
+  },
+  {
+    "id": 7,
+    "name": "James Wilson",
+    "picture": "https://i.ibb.co.com/S4yyYG9V/warren-VVEw-JJRRHgk-unsplash.jpg",
+    "email": "jwilson_recruiter@hire.com",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": ["work", "recruiter"],
+    "bio": "Technical recruiter for startups. Keep updated on portfolio.",
+    "goal": 45,
+    "next_due_date": "2025-05-30"
+  },
+  {
+    "id": 8,
+    "name": "Linus Wu",
+    "picture": "https://i.ibb.co.com/dwJjpDmB/sikandar-hayat-aasi-SQd-UONdqx-JI-unsplash.jpg",
+    "email": "linda.wu@photography.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["hobby", "photography"],
+    "bio": "Met at a street photography workshop. Loves vintage lenses.",
+    "goal": 60,
+    "next_due_date": "2025-09-12"
+  },
+  {
+    "id": 9,
+    "name": "Robert Taylor",
+    "picture": "https://i.ibb.co.com/DgCG3G8z/Gemini-Generated-Image-eyxb8meyxb8meyxb.png",
+    "email": "robt@agency.net",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["work", "client"],
+    "bio": "Current freelance client. Project lead for the landing page.",
+    "goal": 14,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 10,
+    "name": "Stephen Martinez",
+    "picture": "https://i.ibb.co.com/bM75SnYt/Gemini-Generated-Image-g2emzyg2emzyg2em.png",
+    "email": "smartinez@volunteering.org",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["networking", "volunteer"],
+    "bio": "Co-volunteer at the community center. Into sustainable tech.",
+    "goal": 30,
+    "next_due_date": "2025-08-05"
+  }
+]
