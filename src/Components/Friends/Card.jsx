@@ -1,9 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router';
 
 const Card = ({ friend }) => {
   
   return (
-    <div className='card flex justify-center items-center flex-col border border-gray-100 p-6 hover:shadow-xl  rounded-md'>
+    <NavLink to={`/home/${friend.id}`} className='card flex justify-center items-center flex-col border border-gray-100 p-6 hover:shadow-xl  rounded-md'>
       <figure className='w-20 h-20 rounded-full overflow-hidden transition-transform duration-300 hover:scale-110'>
         <img
           src={friend.picture}
@@ -21,7 +22,7 @@ const Card = ({ friend }) => {
           {friend.status}
         </div>
       </div>
-    </div>
+    </NavLink>
   );
 };
 
