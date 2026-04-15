@@ -12,7 +12,7 @@ const Home = () => {
       <div>
         <Banner></Banner>
       </div>
-      <div className='max-w-277.5 w-11/12 md:w-full mx-auto  py-10'>
+      <div className='max-w-277.5 w-11/12  mx-auto  py-10'>
         <h1 className='font-semibold mb-10 text-2xl text-[#1f2937FF]'>Your Friends</h1>
         {!loading
           ?

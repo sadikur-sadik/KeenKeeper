@@ -16,7 +16,7 @@ const CardDetails = () => {
   const newFriend = friends.find(friend => friend.id == id);
   
   return (
-    <div className='max-w-277.5 w-11/12 md:w-full mx-auto my-20'>
+    <div className='max-w-277.5 w-11/12  mx-auto my-20'>
       {loading
       
       ?

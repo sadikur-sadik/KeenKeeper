@@ -14,7 +14,7 @@ const Chart = ({interaction}) => {
   const call = interaction.filter(interact => interact.interactionType == "call");
   const video = interaction.filter(interact => interact.interactionType == "video");
 
-  console.log(text,call,video);
+  
 
   const data = [
   { name: "Text", value: text.length, fill: '#7e35e1FF' },

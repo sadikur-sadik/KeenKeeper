@@ -9,7 +9,7 @@ const Stats = () => {
   const { interaction } = useContext(CommunicationContext);
 
   return (
-    <div className='max-w-277.5 md:w-full w-11/12 mx-auto my-20 space-y-10'>
+    <div className='max-w-277.5  w-11/12 mx-auto my-20 space-y-10'>
       <h1 className='font-bold md:text-5xl text-3xl text-[#1f2937FF]'>Friendship Analytics</h1>
 
       <div className='md:w-full w-11/12 mx-auto p-8 border border-gray-200 rounded-md'>
