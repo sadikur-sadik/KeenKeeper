@@ -9,9 +9,9 @@ import Right from './RightDetails/Right';
 
 const CardDetails = () => {
   const { id } = useParams();
-  const { friends, loading, setFriends } = useHook();
+  const { friends, loading } = useHook();
 
-  console.log(loading, setFriends)
+  // console.log(loading, setFriends)
 
   const newFriend = friends.find(friend => friend.id == id);
   // console.log(newFriend)

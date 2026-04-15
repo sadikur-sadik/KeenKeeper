@@ -10,8 +10,28 @@ import CommunicationContext from '../../../Context/ContextHook';
 const Right = ({ newFriend }) => {
 
   const {text , setText , call ,setCall , video , setVideo} = useContext(CommunicationContext);
-  console.log(text , setText , call ,setCall , video , setVideo)
 
+
+  const handleText = () => {
+
+    
+    setText([...text , newFriend]);
+    // console.log(text)
+  };
+  const handleCall = () => {
+
+    
+    setCall([...call , newFriend]);
+    
+  };
+  const handleVideo= () => {
+
+    
+    setVideo([...video , newFriend]);
+    
+  };
+
+  // console.log(call,video,text)
   return (
     <div className='space-y-4'>
       <div className='grid lg:grid-cols-3 grid-cols-1 gap-6 rounded-md w-auto lg:w-12/12 mx-auto '>
@@ -47,13 +67,13 @@ const Right = ({ newFriend }) => {
       <div className='border border-gray-200 p-6 space-y-4 rounded-md'>
         <h1 className='text-bold'>Quick Check-In</h1>
         <div className='grid lg:grid-cols-3 grid-cols-1 gap-6 rounded-md w-11/12 lg:w-12/12 mx-auto'>
-            <div className='flex justify-center items-center flex-col gap-4 p-4 rounded-md bg-gray-100 border border-gray-200'>
+            <div onClick={handleCall} className='flex justify-center items-center flex-col gap-4 p-4 rounded-md bg-gray-100 border border-gray-200'>
               <FiPhoneCall /> <p>Call</p>
             </div>
-            <div className='flex justify-center items-center flex-col gap-4 p-4 rounded-md bg-gray-100 border border-gray-200'>
+            <div onClick={handleText} className='flex justify-center items-center flex-col gap-4 p-4 rounded-md bg-gray-100 border border-gray-200'>
               <RiMessage2Line /> <p>Text</p>
             </div>
-            <div className='flex justify-center items-center flex-col gap-4 p-4 rounded-md bg-gray-100 border border-gray-200'>
+            <div onClick={handleVideo} className='flex justify-center items-center flex-col gap-4 p-4 rounded-md bg-gray-100 border border-gray-200'>
               <GoDeviceCameraVideo /> <p>Video</p>
             </div>
         </div>
