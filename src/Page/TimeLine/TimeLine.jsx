@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import CommunicationContext from '../../Context/ContextHook';
 import { MdOutlineSpeakerNotesOff } from "react-icons/md";
 // import { TbChartOff } from "react-icons/tb";
@@ -6,10 +6,48 @@ import { MdOutlineSpeakerNotesOff } from "react-icons/md";
 import Card from './Cards/Card';
 
 
+
 const TimeLine = () => {
 
   const { interaction } = useContext(CommunicationContext);
-  console.log(interaction);
+  // console.log(interaction);
+  const [sort, setSort] = useState([]);
+  const [sortType , setSortType] = useState("DEFAULT")
+
+  // const handleSort = (type) => {
+
+  //   if (type === "text") {
+  //     const newSort = interaction.filter(int => int.interactionType === "text");
+  //     setSort(newSort);
+  //     setSortType("Text");
+  //   }
+  //   else if (type === "call") {
+  //     const newSort = interaction.filter(int => int.interactionType === "call");
+  //     setSort(newSort);
+  //     setSortType("Call");
+  //   }
+  //   else if (type === "video") {
+  //     const newSort = interaction.filter(int => int.interactionType === "video");
+  //     setSort(newSort);
+  //     setSortType("Video");
+  //   }
+  //   else if(type === ""){setSort([]) ; setSortType("Default");}
+  // };
+
+  
+  const handleSort = (type) => {
+    if(!sort){
+      setSort([]);
+      
+      return;
+    }
+    else{
+    const newSort = interaction.filter(int => int.interactionType == type);
+    setSort(newSort);
+    setSortType(type === "" ? "DEFAULT" : type.toUpperCase());}
+    }
+  
+  
 
 
 
@@ -18,7 +56,16 @@ const TimeLine = () => {
     <div className='max-w-277.5 md:w-full min-h-[40vh] w-11/12 mx-auto my-20 space-y-10'>
       <h1 className='font-bold md:text-5xl text-3xl text-[#1f2937FF]'>TimeLine</h1>
 
+      <div className="dropdown">
+        <div tabIndex={0} role="button" className="btn m-1">{sortType}</div>
+        <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
 
+          <li onClick={() => handleSort("")}><a>Default</a></li>
+          <li onClick={() => handleSort("text")}><a>Text</a></li>
+          <li onClick={() => handleSort("call")}><a>Call</a></li>
+          <li onClick={() => handleSort("video")}><a>Video</a></li>
+        </ul>
+      </div>
       <div className='md:w-full w-11/12 mx-auto space-y-4'>
 
 
@@ -29,8 +76,15 @@ const TimeLine = () => {
             <h2 className="text-2xl font-bold text-center mt-4">No History Found</h2>
             <p className="text-sm text-center">Log a Call, Video, or Text to start your timeline.</p>
           </div>
-          :
-          interaction.map((interact, i) => <Card data={interact} key={i} />) 
+          : (
+            sort.length == 0
+              ?
+              interaction.map((interact, i) => <Card data={interact} key={i} />)
+              :
+              sort.map((interact, i) => <Card data={interact} key={i} />)
+              
+          )
+
         }
       </div>
     </div>
