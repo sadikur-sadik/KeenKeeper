@@ -11,8 +11,8 @@ const TimeLine = () => {
   const { text, call, video } = useContext(CommunicationContext);
   console.log(text)
   return (
-    <div className='max-w-277.5 w-full mx-auto my-20 space-y-10'>
-      <h1 className='font-bold text-5xl text-[#1f2937FF]'>TimeLine</h1>
+    <div className='max-w-277.5 md:w-full w-11/12 mx-auto my-20 space-y-10'>
+      <h1 className='font-bold md:text-5xl text-3xl text-[#1f2937FF]'>TimeLine</h1>
 
 
       <div className='md:w-full w-11/12 mx-auto space-y-4'>
