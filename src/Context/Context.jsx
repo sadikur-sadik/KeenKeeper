@@ -5,32 +5,43 @@ import textImage from "./../assets/text.png";
 import videoImage from "./../assets/video.png";
 import callImage from "./../assets/call.png";
 import { toast } from 'react-toastify';
+import { Bounce } from 'react-toastify';
 
 
-const ContextCom = ({children}) => {
-  const {day,year,month} = useDate();
-  const [interaction , setInteraction] = useState([]);
+const ContextCom = ({ children }) => {
+  const { day, year, month } = useDate();
+  const [interaction, setInteraction] = useState([]);
 
-  
 
-  const handleInteraction = (type,name) => {
+
+  const handleInteraction = (type, name) => {
     // console.log(name)
-    const typeImage = type === "text" ?  textImage : type === "call" ? callImage : type === "video" ? videoImage : "";
+    const typeImage = type === "text" ? textImage : type === "call" ? callImage : type === "video" ? videoImage : "";
     const newFriend = {
 
-      interactionType : type ,
-      naming: name , 
-      date: {day,year,month},
+      interactionType: type,
+      naming: name,
+      date: { day, year, month },
       image: typeImage
 
     }
-    setInteraction([newFriend  , ...interaction]);
+    setInteraction([newFriend, ...interaction]);
 
-    toast.success(`${type.toUpperCase()} to ${name}`)
+    toast.success(`${type.toUpperCase()} to ${name}`, {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    })
   }
 
   const data = {
-     interaction , handleInteraction
+    interaction, handleInteraction
   }
 
   return <CommunicationContext.Provider value={data}>{children}</CommunicationContext.Provider>;
