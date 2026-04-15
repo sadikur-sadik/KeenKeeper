@@ -1,15 +1,33 @@
 import React, { useState } from 'react';
 import CommunicationContext from './ContextHook';
+import useDate from '../Date/Date';
+import textImage from "./../assets/text.png";
+import videoImage from "./../assets/video.png";
+import callImage from "./../assets/call.png";
 
 
 const ContextCom = ({children}) => {
+  const {day,year,month} = useDate();
+  const [interaction , setInteraction] = useState([]);
 
-  const [text , setText] = useState([]);
-  const [call , setCall] = useState([]);
-  const [video , setVideo] = useState([]);
+  
+
+  const handleInteraction = (type,name) => {
+    // console.log(name)
+    const typeImage = type === "text" ?  textImage : type === "call" ? callImage : type === "video" ? videoImage : "";
+    const newFriend = {
+
+      interactionType : type ,
+      naming: name , 
+      date: {day,year,month},
+      image: typeImage
+
+    }
+    setInteraction([newFriend  , ...interaction])
+  }
 
   const data = {
-    text , setText , call ,setCall , video , setVideo
+     interaction , handleInteraction
   }
 
   return <CommunicationContext.Provider value={data}>{children}</CommunicationContext.Provider>;

@@ -9,7 +9,13 @@ const Chart = () => {
 
 
   
-  const { text, call, video } = useContext(CommunicationContext);
+  const { interaction } = useContext(CommunicationContext);
+
+  const text = interaction.filter(interact => interact.interactionType == "text");
+  const call = interaction.filter(interact => interact.interactionType == "call");
+  const video = interaction.filter(interact => interact.interactionType == "video");
+
+  console.log(text,call,video);
 
   const data = [
   { name: "Text", value: text.length, fill: '#7e35e1FF' },

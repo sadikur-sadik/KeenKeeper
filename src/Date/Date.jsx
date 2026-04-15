@@ -5,7 +5,8 @@ const useDate = () => {
 
   const day = now.getDate();
   const year = now.getFullYear();
-  const monthname = now.getMonth()
+  const monthname = now.getMonth();
+  
   const months = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
