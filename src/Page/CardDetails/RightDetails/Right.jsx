@@ -17,29 +17,29 @@ const Right = ({ newFriend }) => {
   // console.log(call,video,text)
   return (
     <div className='space-y-4'>
-      <div className='grid lg:grid-cols-3 grid-cols-1 gap-6 rounded-md w-auto lg:w-12/12 mx-auto '>
+      <div className='grid lg:grid-cols-3 grid-cols-1 gap-6 rounded-md w-auto lg  mx-auto '>
         <div className='p-8 shadow  flex flex-col justify-center items-center'>
 
-          <div className='font-semibold text-[#244d3fFF] text-[32px] '>{newFriend.days_since_contact}</div>
+          <div className='font-semibold text-[#244d3fFF] text-xl'>{newFriend.days_since_contact}</div>
           <p className=' text-[#64748bFF] '>Days Since Contact</p>
         </div>
         <div className='p-8 shadow flex flex-col justify-center items-center'>
 
-          <div className='font-semibold text-[#244d3fFF] text-[32px] '>{newFriend.goal}</div>
+          <div className='font-semibold text-[#244d3fFF] text-xl '>{newFriend.goal}</div>
           <p className=' text-[#64748bFF] '>Goal(Days)</p>
         </div>
         <div className='p-8 shadow flex flex-col justify-center items-center'>
 
-          <div className='font-semibold text-[#244d3fFF] text-[32px] '>{newFriend.days_since_contact}</div>
+          <div className='font-semibold text-[#244d3fFF] text-xl'>{newFriend.next_due_date}</div>
           <p className=' text-[#64748bFF] '>Next Due</p>
         </div>
       </div>
 
 
       <div className='border border-gray-200 p-6 flex flex-col gap-4 rounded-md'>
-        <div className=' flex justify-between items-center'>
-          <p className='text-[#244d3fFF] font-semibold text-xl'>Relationship Goal</p>
-          <button className='px-3 py-1 bg-gray-100 border rounded-md border-gray-200'>Edit</button>
+        <div className=' flex justify-between items-center gap-1'>
+          <p className='text-[#244d3fFF] font-semibold text-md lg:text-xl'>Relationship Goal</p>
+          <button className='lg:px-3 px-1 py-1 bg-gray-100 border rounded-md border-gray-200'>Edit</button>
         </div>
         <div className='flex items-center gap-2'>
           <span className='text-[#64748bFF]'>Contact Every</span> <span className='font-semibold'>30 Days</span>

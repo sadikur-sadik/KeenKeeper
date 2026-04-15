@@ -1,15 +1,14 @@
 import { Legend, Pie, PieChart, Tooltip } from "recharts";
-import CommunicationContext from "../../../Context/ContextHook";
-import { useContext } from "react";
+
 // #region Sample data
 
 
 // #endregion
-const Chart = () => {
+const Chart = ({interaction}) => {
 
 
   
-  const { interaction } = useContext(CommunicationContext);
+  
 
   const text = interaction.filter(interact => interact.interactionType == "text");
   const call = interaction.filter(interact => interact.interactionType == "call");

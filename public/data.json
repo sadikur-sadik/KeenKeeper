@@ -6,13 +6,10 @@
     "email": "john@example.com",
     "days_since_contact": 12,
     "status": "overdue",
-    "tags": [
-      "college",
-      "close friend"
-    ],
+    "tags": ["college", "close friend"],
     "bio": "Met in university. Love hiking together.",
     "goal": 14,
-    "next_due_date": "2025-07-20"
+    "next_due_date": "July 20, 2025"
   },
   {
     "id": 2,
@@ -21,13 +18,10 @@
     "email": "sarah.j@techcorp.com",
     "days_since_contact": 3,
     "status": "on track",
-    "tags": [
-      "work",
-      "mentor"
-    ],
+    "tags": ["work", "mentor"],
     "bio": "Former manager at TechCorp. Great for career advice.",
     "goal": 30,
-    "next_due_date": "2025-08-15"
+    "next_due_date": "August 15, 2025"
   },
   {
     "id": 3,
@@ -36,13 +30,10 @@
     "email": "mchen_dev@outlook.com",
     "days_since_contact": 13,
     "status": "almost due",
-    "tags": [
-      "college",
-      "hackathon"
-    ],
+    "tags": ["college", "hackathon"],
     "bio": "Met during the 2023 Winter Hackathon. React enthusiast.",
     "goal": 14,
-    "next_due_date": "2025-07-22"
+    "next_due_date": "July 22, 2025"
   },
   {
     "id": 4,
@@ -51,13 +42,10 @@
     "email": "elena.rod@designmail.com",
     "days_since_contact": 45,
     "status": "overdue",
-    "tags": [
-      "networking",
-      "design"
-    ],
+    "tags": ["networking", "design"],
     "bio": "UI/UX Designer met at a local meetup. Last spoke about Figma tips.",
     "goal": 30,
-    "next_due_date": "2025-06-10"
+    "next_due_date": "June 10, 2025"
   },
   {
     "id": 5,
@@ -66,28 +54,22 @@
     "email": "d.smith@freemail.com",
     "days_since_contact": 5,
     "status": "on track",
-    "tags": [
-      "close friend",
-      "gym"
-    ],
+    "tags": ["close friend", "gym"],
     "bio": "High school friend. Training for a marathon together.",
     "goal": 7,
-    "next_due_date": "2025-07-25"
+    "next_due_date": "July 25, 2025"
   },
   {
     "id": 6,
     "name": "Amir Khan",
     "picture": "https://i.ibb.co.com/PsmdfXSc/md-mahdi-oqvq6-Qj5-Zkk-unsplash.jpg",
     "email": "akhan@uni.edu",
-    "tags": [
-      "college",
-      "study group"
-    ],
     "days_since_contact": 19,
     "status": "almost due",
+    "tags": ["college", "study group"],
     "bio": "Lab partner from Physics II. Very organized and helpful.",
     "goal": 21,
-    "next_due_date": "2025-07-21"
+    "next_due_date": "July 21, 2025"
   },
   {
     "id": 7,
@@ -96,13 +78,10 @@
     "email": "jwilson_recruiter@hire.com",
     "days_since_contact": 60,
     "status": "overdue",
-    "tags": [
-      "work",
-      "recruiter"
-    ],
+    "tags": ["work", "recruiter"],
     "bio": "Technical recruiter for startups. Keep updated on portfolio.",
     "goal": 45,
-    "next_due_date": "2025-05-30"
+    "next_due_date": "May 30, 2025"
   },
   {
     "id": 8,
@@ -111,13 +90,10 @@
     "email": "linda.wu@photography.com",
     "days_since_contact": 2,
     "status": "on track",
-    "tags": [
-      "hobby",
-      "photography"
-    ],
+    "tags": ["hobby", "photography"],
     "bio": "Met at a street photography workshop. Loves vintage lenses.",
     "goal": 60,
-    "next_due_date": "2025-09-12"
+    "next_due_date": "September 12, 2025"
   },
   {
     "id": 9,
@@ -126,13 +102,10 @@
     "email": "robt@agency.net",
     "days_since_contact": 12,
     "status": "almost due",
-    "tags": [
-      "work",
-      "client"
-    ],
+    "tags": ["work", "client"],
     "bio": "Current freelance client. Project lead for the landing page.",
     "goal": 14,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "July 18, 2025"
   },
   {
     "id": 10,
@@ -141,13 +114,10 @@
     "email": "smartinez@volunteering.org",
     "days_since_contact": 8,
     "status": "on track",
-    "tags": [
-      "networking",
-      "volunteer"
-    ],
+    "tags": ["networking", "volunteer"],
     "bio": "Co-volunteer at the community center. Into sustainable tech.",
     "goal": 30,
-    "next_due_date": "2025-08-05"
+    "next_due_date": "August 5, 2025"
   },
   {
     "id": 11,
@@ -156,13 +126,10 @@
     "email": "cbuehner@creative-network.com",
     "days_since_contact": 25,
     "status": "overdue",
-    "tags": [
-      "professional",
-      "creative"
-    ],
+    "tags": ["professional", "creative"],
     "bio": "Expert in brand identity and photography. Always up for a coffee chat about design.",
     "goal": 15,
-    "next_due_date": "2026-03-10"
+    "next_due_date": "March 10, 2026"
   },
   {
     "id": 12,
@@ -171,12 +138,9 @@
     "email": "m.luo@tech-solutions.io",
     "days_since_contact": 3,
     "status": "on track",
-    "tags": [
-      "software",
-      "mentorship"
-    ],
+    "tags": ["software", "mentorship"],
     "bio": "Full-stack developer with a passion for open source and community building.",
     "goal": 45,
-    "next_due_date": "2026-05-12"
+    "next_due_date": "May 12, 2026"
   }
 ]

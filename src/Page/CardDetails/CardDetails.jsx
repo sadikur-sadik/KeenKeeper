@@ -11,12 +11,12 @@ const CardDetails = () => {
   const { id } = useParams();
   const { friends, loading } = useHook();
 
-  // console.log(loading, setFriends)
+  
 
   const newFriend = friends.find(friend => friend.id == id);
-  // console.log(newFriend)
+  
   return (
-    <div className='max-w-277.5 w-11/12 md:w-full mx-auto mt-20'>
+    <div className='max-w-277.5 w-11/12 md:w-full mx-auto my-20'>
       {loading
       
       ?
