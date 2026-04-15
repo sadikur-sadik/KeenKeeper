@@ -4,6 +4,7 @@ import useDate from '../Date/Date';
 import textImage from "./../assets/text.png";
 import videoImage from "./../assets/video.png";
 import callImage from "./../assets/call.png";
+import { toast } from 'react-toastify';
 
 
 const ContextCom = ({children}) => {
@@ -23,7 +24,9 @@ const ContextCom = ({children}) => {
       image: typeImage
 
     }
-    setInteraction([newFriend  , ...interaction])
+    setInteraction([newFriend  , ...interaction]);
+
+    toast.success(`${type.toUpperCase()} to ${name}`)
   }
 
   const data = {
