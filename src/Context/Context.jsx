@@ -27,7 +27,7 @@ const ContextCom = ({ children }) => {
     }
     setInteraction([newFriend, ...interaction]);
 
-    toast.success(`${type.toUpperCase()} to ${name}`, {
+    toast.success(`${type.toUpperCase()} with ${name}`, {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: false,

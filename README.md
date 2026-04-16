@@ -1,16 +1,23 @@
-# React + Vite
+# Project KeenKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description: 
 
-Currently, two official plugins are available:
+  This project is about tracking interaction details with friends. We can track the data of interacting our friends with when we interacted. All data will be shown on the Timeline section. But most interesting part is- we can see our data visually by a pie chart on the Chart section. The project is fully responsive across multiple devices. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies
 
-## React Compiler
+- JavaScript (ES6)
+- Tailwind CSS
+- Daisy UI
+- React.js
+- React Router
+- Rechart
+- React Toastify
+- Google Font
+- React Icons
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Three key features 
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- When any friend card is clicked , the detailed information page about that card opens. There we can find 3 buttons (text , call , video) to perform any interaction with the friend.
+- The timline section will display the interaction history. Moreover, it has a sort dropdown that helps us sort the history according to their type.
+- A Pie chart on the Chart section will depict information of the history visually. The three considerable segment is again Text,  Call, Video

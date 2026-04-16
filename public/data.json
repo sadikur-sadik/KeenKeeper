@@ -6,7 +6,7 @@
     "email": "john@example.com",
     "days_since_contact": 12,
     "status": "overdue",
-    "tags": ["college", "close friend"],
+    "tags": ["alumni", "close"],
     "bio": "Met in university. Love hiking together.",
     "goal": 14,
     "next_due_date": "July 20, 2025"
@@ -30,7 +30,7 @@
     "email": "mchen_dev@outlook.com",
     "days_since_contact": 13,
     "status": "almost due",
-    "tags": ["college", "hackathon"],
+    "tags": ["dev", "event"],
     "bio": "Met during the 2023 Winter Hackathon. React enthusiast.",
     "goal": 14,
     "next_due_date": "July 22, 2025"
@@ -42,7 +42,7 @@
     "email": "elena.rod@designmail.com",
     "days_since_contact": 45,
     "status": "overdue",
-    "tags": ["networking", "design"],
+    "tags": ["lead", "design"],
     "bio": "UI/UX Designer met at a local meetup. Last spoke about Figma tips.",
     "goal": 30,
     "next_due_date": "June 10, 2025"
@@ -54,7 +54,7 @@
     "email": "d.smith@freemail.com",
     "days_since_contact": 5,
     "status": "on track",
-    "tags": ["close friend", "gym"],
+    "tags": ["close", "fitness"],
     "bio": "High school friend. Training for a marathon together.",
     "goal": 7,
     "next_due_date": "July 25, 2025"
@@ -66,7 +66,7 @@
     "email": "akhan@uni.edu",
     "days_since_contact": 19,
     "status": "almost due",
-    "tags": ["college", "study group"],
+    "tags": ["peer", "study"],
     "bio": "Lab partner from Physics II. Very organized and helpful.",
     "goal": 21,
     "next_due_date": "July 21, 2025"
@@ -78,7 +78,7 @@
     "email": "jwilson_recruiter@hire.com",
     "days_since_contact": 60,
     "status": "overdue",
-    "tags": ["work", "recruiter"],
+    "tags": ["hiring", "talent"],
     "bio": "Technical recruiter for startups. Keep updated on portfolio.",
     "goal": 45,
     "next_due_date": "May 30, 2025"
@@ -90,7 +90,7 @@
     "email": "linda.wu@photography.com",
     "days_since_contact": 2,
     "status": "on track",
-    "tags": ["hobby", "photography"],
+    "tags": ["hobby", "photo"],
     "bio": "Met at a street photography workshop. Loves vintage lenses.",
     "goal": 60,
     "next_due_date": "September 12, 2025"
@@ -102,7 +102,7 @@
     "email": "robt@agency.net",
     "days_since_contact": 12,
     "status": "almost due",
-    "tags": ["work", "client"],
+    "tags": ["client", "active"],
     "bio": "Current freelance client. Project lead for the landing page.",
     "goal": 14,
     "next_due_date": "July 18, 2025"
@@ -114,7 +114,7 @@
     "email": "smartinez@volunteering.org",
     "days_since_contact": 8,
     "status": "on track",
-    "tags": ["networking", "volunteer"],
+    "tags": ["impact", "green"],
     "bio": "Co-volunteer at the community center. Into sustainable tech.",
     "goal": 30,
     "next_due_date": "August 5, 2025"
@@ -126,7 +126,7 @@
     "email": "cbuehner@creative-network.com",
     "days_since_contact": 25,
     "status": "overdue",
-    "tags": ["professional", "creative"],
+    "tags": ["pro", "brand"],
     "bio": "Expert in brand identity and photography. Always up for a coffee chat about design.",
     "goal": 15,
     "next_due_date": "March 10, 2026"
@@ -138,7 +138,7 @@
     "email": "m.luo@tech-solutions.io",
     "days_since_contact": 3,
     "status": "on track",
-    "tags": ["software", "mentorship"],
+    "tags": ["code", "growth"],
     "bio": "Full-stack developer with a passion for open source and community building.",
     "goal": 45,
     "next_due_date": "May 12, 2026"
