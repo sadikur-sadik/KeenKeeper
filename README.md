@@ -2,7 +2,7 @@
 
 ## Description: 
 
-  This project is about tracking interaction details with friends. We can track the data of interacting our friends with when we interacted. All data will be shown on the Timeline section. But most interesting part is- we can see our data visually by a pie chart on the Chart section. The project is fully responsive across multiple devices. 
+  This project is about tracking interaction details with friends. We can track the data of interacting our friends with when time, mode of interaction etc. All data will be shown on the Timeline section. But most interesting part is- we can see our data visually by a pie chart on the Chart section. The project is fully responsive across multiple devices. 
 
 ## Technologies
 
