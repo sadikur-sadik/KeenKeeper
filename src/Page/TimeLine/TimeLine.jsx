@@ -5,6 +5,7 @@ import Card from './Cards/Card';
 import { LuMessageSquareOff } from "react-icons/lu";
 import { BsCameraVideoOff } from "react-icons/bs";
 import { HiPhoneMissedCall } from "react-icons/hi";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 
 
@@ -59,7 +60,7 @@ const TimeLine = () => {
       <h1 className='font-bold md:text-5xl text-3xl text-[#1f2937FF]'>TimeLine</h1>
 
       <div className="dropdown">
-        <div tabIndex={0} role="button" className="btn m-1">{sortType}</div>
+        <div tabIndex={0} role="button" className="btn m-1 flex gap-1 justify-center items-center"><span>{sortType}</span><MdKeyboardArrowDown className='w-5 h-5'/></div>
         <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
 
           <li onClick={() => handleSort("")}><a>Default</a></li>
