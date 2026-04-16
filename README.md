@@ -20,4 +20,4 @@
 
 - When any friend card is clicked , the detailed information page about that card opens. There we can find 3 buttons (text , call , video) to perform any interaction with the friend.
 - The timline section will display the interaction history. Moreover, it has a sort dropdown that helps us sort the history according to their type.
-- A Pie chart on the Chart section will depict information of the history visually. The three considerable segment is again Text,  Call, Video
+- A Pie chart on the Chart section will depict information of the history visually. The three considerable segment is again Text,  Call, Video.
