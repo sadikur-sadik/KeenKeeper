@@ -27,7 +27,7 @@ const CardDetails = () => {
       
       :
 
-        <div className='flex flex-col md:flex-row gap-6 w-11/12 md:w-full'>
+        <div className='flex flex-col md:flex-row gap-6 w-11/12 md:w-full mx-auto'>
           <div className='w-auto mx-auto max-w-87.5'>
             <Left newFriend={newFriend}></Left>
           </div>

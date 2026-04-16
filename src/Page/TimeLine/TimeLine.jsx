@@ -1,9 +1,10 @@
 import React, { useContext, useState } from 'react';
 import CommunicationContext from '../../Context/ContextHook';
 import { MdOutlineSpeakerNotesOff } from "react-icons/md";
-// import { TbChartOff } from "react-icons/tb";
-
 import Card from './Cards/Card';
+import { LuMessageSquareOff } from "react-icons/lu";
+import { BsCameraVideoOff } from "react-icons/bs";
+import { HiPhoneMissedCall } from "react-icons/hi";
 
 
 
@@ -12,7 +13,7 @@ const TimeLine = () => {
   const { interaction } = useContext(CommunicationContext);
   // console.log(interaction);
   const [sort, setSort] = useState([]);
-  const [sortType , setSortType] = useState("DEFAULT")
+  const [sortType, setSortType] = useState("DEFAULT")
 
   // const handleSort = (type) => {
 
@@ -34,20 +35,21 @@ const TimeLine = () => {
   //   else if(type === ""){setSort([]) ; setSortType("Default");}
   // };
 
-  
+
   const handleSort = (type) => {
-    if(!sort){
+    if (!sort) {
       setSort([]);
-      
+
       return;
     }
-    else{
-    const newSort = interaction.filter(int => int.interactionType == type);
-    setSort(newSort);
-    setSortType(type === "" ? "DEFAULT" : type.toUpperCase());}
+    else {
+      const newSort = interaction.filter(int => int.interactionType == type);
+      setSort(newSort);
+      setSortType(type === "" ? "DEFAULT" : type.toUpperCase());
     }
-  
-  
+  }
+
+
 
 
 
@@ -77,17 +79,30 @@ const TimeLine = () => {
             <p className="text-sm text-center">Log a Call, Video, or Text to start your timeline.</p>
           </div>
           : (
-            sort.length == 0 
-              ?
-              interaction.map((interact, i) => <Card data={interact} key={i} />)
+
+            sortType === "DEFAULT" ? interaction.map((interact, i) => <Card data={interact} key={i} />)
               :
-              sort.map((interact, i) => <Card data={interact} key={i} />)
-              
-          )
+              sort.length == 0 ? (
+                <div className="flex flex-col items-center gap-2 text-gray-400 mt-10">
+                  {sortType === "TEXT" && <LuMessageSquareOff  size={40} className="opacity-20" />}
+                  {sortType === "CALL" && <HiPhoneMissedCall size={40} className="opacity-20" />}
+                  {sortType === "VIDEO" && <BsCameraVideoOff  size={40} className="opacity-20" />}
+                  <p className="text-sm font-medium text-center">No {sortType.toLowerCase()} interaction found</p>
+                </div>
+              )
+                
+            : sort.map((interact, i) => <Card data={interact} key={i} />)
+            // sort.length == 0
+            //   ?
+            //   interaction.map((interact, i) => <Card data={interact} key={i} />)
+            //   :
+            //   sort.map((interact, i) => <Card data={interact} key={i} />)
+
+      )
 
         }
-      </div>
     </div>
+    </div >
   );
 };
 

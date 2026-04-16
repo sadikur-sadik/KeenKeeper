@@ -19,7 +19,7 @@ const Stats = () => {
           ?
           <div className="flex flex-col items-center justify-center my-20 text-gray-400">
             <TbChartPieOff size={80} className="opacity-30" />
-            <h2 className="text-2xl font-bold text-center mt-4">No History Found</h2>
+            <h2 className="text-2xl font-bold text-center mt-4">No Chart Found</h2>
             <p className="text-sm text-center">Log a Call, Video, or Text to see the Chart.</p>
           </div>
           :
